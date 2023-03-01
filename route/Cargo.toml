@@ -1,0 +1,25 @@
+[package]
+name = "route"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.1"
+geo = "0.23"
+indicatif = "0.17"
+proj = {version="0.27", features=["bundled_proj"]}
+rand = "0.8"
+rayon = "1.6"
+serde = {version = "1", features = ["derive"] }
+wkt = {version = "0.10", features = ["geo-types", "serde"] }
+num-traits = "0.2"
+
+[[bin]]
+name = "astar"
+path = "src/bin/astar.rs"
+
+[[bin]]
+name = "alt"
+path = "src/bin/alt.rs"

@@ -1,0 +1,24 @@
+[package]
+name = "osmgraph"
+version = "0.1.0"
+authors = ["Dmitri Lebedev <ryba4@ryba4.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+osmreader = { path = "../osmreader", version = "0.1" }
+csv = "1.1"
+geo = "0.23"
+serde = {version = "1", features = ["derive"] }
+
+[dev-dependencies]
+log = "0.4"
+env_logger = "0.9.0"
+
+[build-dependencies]
+protobuf-codegen-pure = "2.8"
+
+[[bin]]
+name = "prune"
+path = "src/prune.rs"
