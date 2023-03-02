@@ -85,6 +85,6 @@ A* algorithm:
 
 ALT algorithm:
 
-![ALT shortest path](readme/astar.jpeg)
+![ALT shortest path](readme/alt.jpeg)
 
 Currently, routing is distance-based, and ALT doesn't have a big advantage over A*, just ~2x.
