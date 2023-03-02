@@ -81,10 +81,10 @@ Results visualized in QGIS:
 
 A* algorithm:
 
-![A* shortest path](./readme/astar.jpg)
+![A* shortest path](readme/astar.jpeg)
 
 ALT algorithm:
 
-![ALT shortest path](./readme/astar.jpg)
+![ALT shortest path](readme/astar.jpeg)
 
 Currently, routing is distance-based, and ALT doesn't have a big advantage over A*, just ~2x.
