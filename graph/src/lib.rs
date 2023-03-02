@@ -1,11 +1,12 @@
 use geo::LineString;
 use serde::{Serialize, Deserialize};
-use osmio2::serialize_wkt;
 
+use osmio2::serialize_wkt;
 use osmio2::{
 	reader::OsmXmlReader,
 	objects::{Way, NodeId, WayId}
 };
+
 use std::{collections::{HashSet, HashMap},
 	sync::Arc, error::Error, fmt,
 };
